@@ -76,7 +76,7 @@ const goClick = ()=>{
     screen.innerHTML = ` <h4> Level ${level} :  Guess Word of Length ${n_col} </h4>`;
     word = wordArray[level-1][Math.floor(Math.random()*wordArray[level-1].length)];
     input_box.setAttribute('maxlength', `${level+1}`);
-    // console.log("Word is ", word);
+    console.log("Word is ", word);
     enableInput();
     disableBtn();
 }
